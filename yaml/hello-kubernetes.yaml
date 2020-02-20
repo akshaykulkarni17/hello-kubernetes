@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: hello-kubernetes
-        image: hsbcvoyager/hello-kubernetes
+        image: hsbcvoyager/hello-kubernetes:demo
         ports:
         - containerPort: 8080
