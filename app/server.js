@@ -9,7 +9,6 @@ app.set('view engine', 'handlebars');
 app.use(express.static('static'));
 app.use(morgan('combined'));
 
-// Configuration
 var port = process.env.PORT || 8080;
 var message = process.env.MESSAGE || "Hello world!";
 
@@ -21,7 +20,5 @@ app.get('/', function (req, res) {
     });
 });
 
-// Set up listener
 app.listen(port, function () {
-  console.log("Listening on: http://%s:%s", os.hostname(), port);
 });
